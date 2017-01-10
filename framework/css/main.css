@@ -1,0 +1,155 @@
+* {
+    border: 1px solid red !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#name-box{
+	align-self: center;
+}
+
+#image-logo{
+	height: 150px;
+	vertical-align: middle;
+}
+
+#feature-image-box{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+#feature-image-box:hover{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#feature-image{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+}
+
+#project-head{
+	font-size: xx-large;
+	font-family: 'Courgette', serif;
+	font-weight: bold;
+	color: #BCBBBB;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#project-card {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 6px;
+	margin: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+#project-card:hover {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#project-image{
+	width: 100%;
+	height: 80%;
+	background-position: center;
+}
+
+
+.name{
+	font-size: -webkit-xxx-large;
+	text-align: end;
+	font-family: 'Arima Madurai',serif;
+	color: #747704;
+}
+
+.name-tag{
+	font-size: x-large;
+	text-align: end;
+	font-family: 'Open Sans',Sans-serif;
+	color: #747704;
+}
+
+.project-title{
+	font-size: xx-large;
+	font-family: 'Ubuntu',serif;
+	text-align: center;
+	color: #747704;
+}
+
+.project-subtitle{
+	font-size: medium;
+	font-family: 'Ubuntu',Sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+.grid{
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.row{
+	width: 100%;
+	margin-bottom: 20px;
+    display: flex;
+}
+
+.col-1{
+	width: 8.33%;
+}
+
+.col-2{
+	width: 16.66%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-4{
+	width: 33.33%;
+}
+
+.col-5{
+	width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
