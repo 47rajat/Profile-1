@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- links to js files for modal -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 	<!-- link for the google fonts -->
 	<link rel="stylesheet" type="text/css"
@@ -10,47 +18,149 @@
 
 </head>
 <body>
-<div class="grid">
-	<div class="row">
-		<div class="col-6">
-			<img id="image-logo" src="https://d125fmws0bore1.cloudfront.net/assets/logo/logo-mark-e55958b7fd6d392c1e343b02a9e045cb669c33cfa1bb772bba40897a0f2b482d.svg">
-		</div>
-		<div class="col-6" id="name-box">
-			<div class="name">
-				RAJAT
+	<div class="container">
+		<div class="row title-row-margin">
+			<div class="col-md-6">
+				<picture>
+					<img class="img-responsive | title-logo" alt="Udacity logo" src="https://d125fmws0bore1.cloudfront.net/assets/logo/logo-mark-e55958b7fd6d392c1e343b02a9e045cb669c33cfa1bb772bba40897a0f2b482d.svg">
+				</picture>
 			</div>
-			<div class="name-tag">
-				Jarvis, it's me.
+			<div class="col-md-6 text-right text-uppercase">
+				<h1 class="title-name">
+					Rajat
+				</h1>
+				<h4 class="title-name-tag">
+					Everybody lies
+				</h4>
+				<p>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					    <img style="border:0;width:88px;height:31px"
+					        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+					        alt="Valid CSS!" />
+				    </a>
+				</p>
 			</div>
 		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-12" id="feature-image-box">
-			<img id="feature-image" src="images/feature-image.png">
+
+		<div class="row">
+	        <div class="col-md-12">
+	          <hr>
+	        </div>
+	    </div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<picture>
+					<img class="img-responsive feature-image" src="images/feature-image.png" alt="Feature image of the page">
+				</picture>
+			</div>
 		</div>
+
+		<div class="row" id="project-head">
+			<div class="col-md-12">
+				<h2>Featured Work</h2>
+			</div>
+			
+		</div>
+
+		<div class="row text-center">
+			<div class="col-md-4">
+				<div class="project-card">
+					<picture>
+						<img class="img-responsive" src="images/project-3.png" alt="Project 1 image" data-toggle="modal" data-target="#project1">
+					</picture>
+
+					<article>
+						<h3 class="project-title">APPIFY</h3>
+						<p class="project-subtitle"><a href="http://github.com">Link to project</a></p>
+					</article>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="project-card">
+					<picture>
+						<img class="img-responsive" src="images/project-3.png" alt="Project 2 image" data-toggle="modal" data-target="#project2">
+					</picture>
+					<article>
+						<h3 class="project-title">SUNFLOWER</h3>
+						<p class="project-subtitle"><a href="http://github.com">Link to project</a></p>
+					</article>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="project-card">
+					<picture>
+						<img class="img-responsive" src="images/project-3.png" alt="Project 3 image" data-toggle="modal" data-target="#project3">
+					</picture>
+					<article>
+						<h3 class="project-title">BOKEH</h3>
+						<p class="project-subtitle"><a href="http://github.com">Link to project</a></p>
+					</article>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
-	<div class="row" id="project-head">Featured Work</div>
+<!-- Modal for project1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title project-title" id="project1ModalLabel">Project 1</h4>
+                </div>
+                <div class="modal-body">
+                	<picture>
+                		<img class="img-responsive img-rounded" src="images/project-3.png" alt="Project 1 modal image">
+                	</picture>
+                    <p class="modal-description">Here will be the description for the first project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="row">
-		<div class="col-4" id="project-card">
-			<img id="project-image" src="images/project-1.png">
-			<div class="project-title">APPIFY</div>
-			<div class="project-subtitle">https://github.com/Appify/</div>
-		</div>
-		<div class="col-4" id="project-card">
-			<img id="project-image" src="images/project-2.png">
-			<div class="project-title">SUNFLOWER</div>
-			<div class="project-subtitle">https://github.com/Sunflower/</div>
-		</div>
-		<div class="col-4" id="project-card">
-			<img id="project-image" src="images/project-3.png">
-			<div class="project-title">BOKEH</div>
-			<div class="project-subtitle">https://github.com/Bokeh/</div>
-		</div>
-	</div>
+    <!-- Modal for project2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title project-title" id="project2ModalLabel">Project 2</h4>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                    	<img class="img-responsive img-rounded" src="images/project-3.png" alt="Project 2 modal image">
+                    </picture>
+                    <p class="modal-description">Here will be the description for the second project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <!-- Modal for project3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title project-title" id="project3ModalLabel">Project 3</h4>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                    	<img class="img-responsive img-rounded" src="images/project-3.png" alt="Project 3 modal image">
+                    </picture>
+                    <p class="modal-description">Here will be the description for the third project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
